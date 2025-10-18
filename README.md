@@ -1,3 +1,7 @@
+
+Loom Link: https://www.loom.com/share/688c3a2344fa4cf183e529db06397287?sid=f0d2168c-adc5-4c32-997a-f02e82e88109
+
+---------------------------------------------
 **Lab Rule and Citation**
 Lab test: Serum Potassium (K+)
 Normal Range: 3.5-5.0 mmol/L
@@ -6,10 +10,7 @@ If potassium < 3.5 -> Abnormal (low)
 If potassium > 5.0 -> Abnormal (high)
 Otherwise -> Normal
 Citation: Sur M, Mohiuddin SS. Potassium. [Updated 2024 Oct 5]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jan-. Available from: https://www.ncbi.nlm.nih.gov/books/NBK539791/?utm_source
-
-----------------------------------------------
-
-Loom Link: 
+ 
 --------------------------------------------
 **Google Cloud (GCP) Function Deployment- Potassium Classifier**
 
@@ -120,4 +121,4 @@ _______________________________________________
 
 **AZURE VS. GCP**
 
-Between Azure and GCP, I found GCP to be easier and quicker to deploy the potassium-classifier function compared to Azure. I was able to complete the deployment on GCP much more smoothly within the Cloud Shell using a single CLI command. The build and deployment logs appeared clearly, and the public endpoint was generated without any major troubleshooting. The only issue I had initially encounrtered was when the function's trigger URL displayed error messgages when accessing immediately after deployment. I resolved this by restarting the deployment and making sure I was using the correct plan, region, and that the authentication was set to unauthenticated. On the other hand, Azure had more manual steps and trouble shooting, which delayed the deployment for a longer period. There were a lot of errors including region restrictions (RequestDisallowedbyAzure), missing requirement files, directory path errors, Nano editor, and save failures. When I was finally succesfful in deploying, the function had then failed to display the invoke URL, which I then had to reinitialize the project and manually edit the function.json and __init__.py files. I had assistance with AI to resolve some of these issues as well learn some new techniques such as incorporating the Nano editor for file editing. This was useful because many of the steps were asking to switch between the Python and Bash environments. 
+Between Azure and GCP, I found GCP to be easier and quicker to deploy the potassium-classifier function compared to Azure. I was able to complete the deployment on GCP much more smoothly within the Cloud Shell using a single CLI command. The build and deployment logs appeared clearly, and the public endpoint was generated without any major troubleshooting. The only issue I had initially encounrtered was when the function's trigger URL displayed error messgages when accessing immediately after deployment. I resolved this by restarting the deployment and making sure I was using the correct plan, region, and that the authentication was set to unauthenticated. On the other hand, Azure had more manual steps and trouble shooting, which delayed the deployment for a longer period. There were a lot of errors including region restrictions (RequestDisallowedbyAzure), missing requirement files, directory path errors, Nano editor, and save failures. When I was finally successful in deploying, the function had then failed to display the invoke URL, which I then had to reinitialize the project and manually edit the function.json and __init__.py files. I had assistance with AI to resolve some of these issues as well as learn some new techniques such as incorporating the Nano editor for file editing. This was useful because many of the steps were asking to switch between the Python and Bash environments. 
